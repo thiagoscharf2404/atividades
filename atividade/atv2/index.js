@@ -1,10 +1,12 @@
 const readline = require('node:readline');
 
+const SALDO_INICIAL_EM_CENTAVOS = 100000;
+
 const conta = {
   titular: 'Thiago Scharf',
   agencia: '0001',
   numero: '12345-6',
-  saldoEmCentavos: 100000,
+  saldoEmCentavos: SALDO_INICIAL_EM_CENTAVOS,
 };
 
 const formatadorDeMoeda = new Intl.NumberFormat('pt-BR', {
