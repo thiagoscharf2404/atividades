@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha lista de tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">ATIVIDADE 03 • ORGANIZE SEU DIA</p>
+    <h1>Uma tarefa de cada vez.</h1>
+    <p class="intro">Anote o que você precisa fazer e comece pelo primeiro passo.</p>
+    <form id="task-form">
+      <label for="task-input">Nova tarefa</label>
+      <div class="input-row">
+        <input id="task-input" type="text" placeholder="O que você vai fazer?" autocomplete="off" required maxlength="200">
+        <button type="submit">Adicionar</button>
+      </div>
+    </form>
+    <div class="list-heading">
+      <h2>Suas tarefas</h2>
+      <span id="task-count" aria-live="polite">0 tarefas</span>
+    </div>
+    <p id="empty-message">Tudo livre por aqui. Adicione sua primeira tarefa!</p>
+    <ul id="task-list" aria-label="Lista de tarefas"></ul>
+    <p class="hint">Marque a caixa para concluir uma tarefa. Para excluí-la, use o botão Remover.</p>
+  </main>
+</body>
+</html>
